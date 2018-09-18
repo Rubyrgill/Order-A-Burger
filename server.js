@@ -20,11 +20,12 @@ app.engine('handlebars', exphbs({
 
 app.set('view engine', 'handlebars');
 
+//linking controller route
 var routes = require('./controllers/burgers_controller.js');
 
 app.use(routes);
 
-
+//Listening to PORT
 app.listen(PORT, function () {
     console.log("Server listening  on: http://localhost:" + PORT);
 });
