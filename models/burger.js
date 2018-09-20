@@ -9,6 +9,10 @@ var burger = {
     //UPDATE 
     update: function (id, cb) {
         orm.update('burgers', id, cb);
+    },
+    //CREATE
+    create: function (name, cb) {
+        orm.create('burgers', name, cb);
     }
 }
 

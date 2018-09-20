@@ -19,10 +19,20 @@
     {{/each}}
 </div> <br><br>
 
+<!--Devoured-->
 <div class="sec-col">
     {{#each burger_data}}
     {{#if this.devoured}}
     <input class="form-control" type="text" placeholder="{{this.id}}.{{this.burger_name}}" readonly>
     {{/if}}
     {{/each}}
+</div>
+
+<!--Post-->
+<div class="container">
+    <form action="/burgers/create" method="POST">
+        <input type="text" name="burger_name" class="form-control" value="" id="enter">
+        <button type="submit" id="submit-input">Submit</button>
+    </form>
+    <p>Order A Burger</p>
 </div>
