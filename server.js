@@ -3,12 +3,12 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
 var methodOverride = require('method-override');
-var path = require('path');
+// var path = require('path');
 
 var app = express();
 var PORT = process.env.PORT || 3000;
 //css
-app.use(express.static(path.join(__dirname, "public/static")));
+// app.use(express.static(path.join(__dirname, "public/static")));
 
 
 app.use(bodyParser.urlencoded({
